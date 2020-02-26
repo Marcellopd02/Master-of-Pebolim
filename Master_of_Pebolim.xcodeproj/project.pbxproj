@@ -115,11 +115,10 @@
 		BA052B4A23F1990F005DCF81 /* Master_of_Pebolim */ = {
 			isa = PBXGroup;
 			children = (
+				BAE40CAE2406EBE70078E9CD /* Delegate */,
 				BA052B7E23F199E0005DCF81 /* View */,
 				BA052B8023F199F5005DCF81 /* ViewModel */,
 				BA052B7F23F199EF005DCF81 /* Model */,
-				BA052B4B23F1990F005DCF81 /* AppDelegate.swift */,
-				BA052B4D23F1990F005DCF81 /* SceneDelegate.swift */,
 				BA0214DC23FD74A700EA2F67 /* pembas.mp4 */,
 				BA052B5723F19910005DCF81 /* Assets.xcassets */,
 				BA052B5923F19910005DCF81 /* LaunchScreen.storyboard */,
@@ -174,6 +173,15 @@
 				BA444E3A23F45C99008EE7BD /* ConventionalGameViewModel.swift */,
 			);
 			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		BAE40CAE2406EBE70078E9CD /* Delegate */ = {
+			isa = PBXGroup;
+			children = (
+				BA052B4B23F1990F005DCF81 /* AppDelegate.swift */,
+				BA052B4D23F1990F005DCF81 /* SceneDelegate.swift */,
+			);
+			path = Delegate;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
