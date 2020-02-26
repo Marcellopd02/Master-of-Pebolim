@@ -1,0 +1,654 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BA0214DD23FD74BA00EA2F67 /* pembas.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = BA0214DC23FD74A700EA2F67 /* pembas.mp4 */; };
+		BA052B4C23F1990F005DCF81 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA052B4B23F1990F005DCF81 /* AppDelegate.swift */; };
+		BA052B4E23F1990F005DCF81 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA052B4D23F1990F005DCF81 /* SceneDelegate.swift */; };
+		BA052B5023F1990F005DCF81 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA052B4F23F1990F005DCF81 /* ViewController.swift */; };
+		BA052B5323F1990F005DCF81 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA052B5123F1990F005DCF81 /* Main.storyboard */; };
+		BA052B5623F1990F005DCF81 /* Master_of_Pebolim.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BA052B5423F1990F005DCF81 /* Master_of_Pebolim.xcdatamodeld */; };
+		BA052B5823F19910005DCF81 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BA052B5723F19910005DCF81 /* Assets.xcassets */; };
+		BA052B5B23F19910005DCF81 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA052B5923F19910005DCF81 /* LaunchScreen.storyboard */; };
+		BA052B6623F19910005DCF81 /* Master_of_PebolimTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA052B6523F19910005DCF81 /* Master_of_PebolimTests.swift */; };
+		BA052B7123F19910005DCF81 /* Master_of_PebolimUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA052B7023F19910005DCF81 /* Master_of_PebolimUITests.swift */; };
+		BA444E3723F43B99008EE7BD /* ConfigViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA444E3623F43B99008EE7BD /* ConfigViewController.swift */; };
+		BA444E3923F43BB8008EE7BD /* ConfigViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA444E3823F43BB8008EE7BD /* ConfigViewModel.swift */; };
+		BA444E3B23F45C99008EE7BD /* ConventionalGameViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA444E3A23F45C99008EE7BD /* ConventionalGameViewModel.swift */; };
+		BA444E3D23F45CB0008EE7BD /* ConventionalGameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA444E3C23F45CB0008EE7BD /* ConventionalGameViewController.swift */; };
+		BAE3072F23F1E91F005E1D7E /* Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAE3072E23F1E91F005E1D7E /* Util.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BA052B6223F19910005DCF81 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BA052B4023F1990F005DCF81 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BA052B4723F1990F005DCF81;
+			remoteInfo = Master_of_Pebolim;
+		};
+		BA052B6D23F19910005DCF81 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BA052B4023F1990F005DCF81 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BA052B4723F1990F005DCF81;
+			remoteInfo = Master_of_Pebolim;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		BA0214DC23FD74A700EA2F67 /* pembas.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = pembas.mp4; sourceTree = SOURCE_ROOT; };
+		BA052B4823F1990F005DCF81 /* Master_of_Pebolim.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Master_of_Pebolim.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BA052B4B23F1990F005DCF81 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		BA052B4D23F1990F005DCF81 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		BA052B4F23F1990F005DCF81 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		BA052B5223F1990F005DCF81 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BA052B5523F1990F005DCF81 /* Master_of_Pebolim.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Master_of_Pebolim.xcdatamodel; sourceTree = "<group>"; };
+		BA052B5723F19910005DCF81 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BA052B5A23F19910005DCF81 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		BA052B5C23F19910005DCF81 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BA052B6123F19910005DCF81 /* Master_of_PebolimTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Master_of_PebolimTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BA052B6523F19910005DCF81 /* Master_of_PebolimTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Master_of_PebolimTests.swift; sourceTree = "<group>"; };
+		BA052B6723F19910005DCF81 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BA052B6C23F19910005DCF81 /* Master_of_PebolimUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Master_of_PebolimUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BA052B7023F19910005DCF81 /* Master_of_PebolimUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Master_of_PebolimUITests.swift; sourceTree = "<group>"; };
+		BA052B7223F19910005DCF81 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BA444E3623F43B99008EE7BD /* ConfigViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigViewController.swift; sourceTree = "<group>"; };
+		BA444E3823F43BB8008EE7BD /* ConfigViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigViewModel.swift; sourceTree = "<group>"; };
+		BA444E3A23F45C99008EE7BD /* ConventionalGameViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConventionalGameViewModel.swift; sourceTree = "<group>"; };
+		BA444E3C23F45CB0008EE7BD /* ConventionalGameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConventionalGameViewController.swift; sourceTree = "<group>"; };
+		BAE3072E23F1E91F005E1D7E /* Util.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Util.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BA052B4523F1990F005DCF81 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BA052B5E23F19910005DCF81 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BA052B6923F19910005DCF81 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BA052B3F23F1990F005DCF81 = {
+			isa = PBXGroup;
+			children = (
+				BA052B4A23F1990F005DCF81 /* Master_of_Pebolim */,
+				BA052B6423F19910005DCF81 /* Master_of_PebolimTests */,
+				BA052B6F23F19910005DCF81 /* Master_of_PebolimUITests */,
+				BA052B4923F1990F005DCF81 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BA052B4923F1990F005DCF81 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BA052B4823F1990F005DCF81 /* Master_of_Pebolim.app */,
+				BA052B6123F19910005DCF81 /* Master_of_PebolimTests.xctest */,
+				BA052B6C23F19910005DCF81 /* Master_of_PebolimUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BA052B4A23F1990F005DCF81 /* Master_of_Pebolim */ = {
+			isa = PBXGroup;
+			children = (
+				BA052B7E23F199E0005DCF81 /* View */,
+				BA052B8023F199F5005DCF81 /* ViewModel */,
+				BA052B7F23F199EF005DCF81 /* Model */,
+				BA052B4B23F1990F005DCF81 /* AppDelegate.swift */,
+				BA052B4D23F1990F005DCF81 /* SceneDelegate.swift */,
+				BA0214DC23FD74A700EA2F67 /* pembas.mp4 */,
+				BA052B5723F19910005DCF81 /* Assets.xcassets */,
+				BA052B5923F19910005DCF81 /* LaunchScreen.storyboard */,
+				BA052B5C23F19910005DCF81 /* Info.plist */,
+				BA052B5423F1990F005DCF81 /* Master_of_Pebolim.xcdatamodeld */,
+			);
+			path = Master_of_Pebolim;
+			sourceTree = "<group>";
+		};
+		BA052B6423F19910005DCF81 /* Master_of_PebolimTests */ = {
+			isa = PBXGroup;
+			children = (
+				BA052B6523F19910005DCF81 /* Master_of_PebolimTests.swift */,
+				BA052B6723F19910005DCF81 /* Info.plist */,
+			);
+			path = Master_of_PebolimTests;
+			sourceTree = "<group>";
+		};
+		BA052B6F23F19910005DCF81 /* Master_of_PebolimUITests */ = {
+			isa = PBXGroup;
+			children = (
+				BA052B7023F19910005DCF81 /* Master_of_PebolimUITests.swift */,
+				BA052B7223F19910005DCF81 /* Info.plist */,
+			);
+			path = Master_of_PebolimUITests;
+			sourceTree = "<group>";
+		};
+		BA052B7E23F199E0005DCF81 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				BA444E3623F43B99008EE7BD /* ConfigViewController.swift */,
+				BA444E3C23F45CB0008EE7BD /* ConventionalGameViewController.swift */,
+				BA052B4F23F1990F005DCF81 /* ViewController.swift */,
+				BA052B5123F1990F005DCF81 /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		BA052B7F23F199EF005DCF81 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				BAE3072E23F1E91F005E1D7E /* Util.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		BA052B8023F199F5005DCF81 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				BA444E3823F43BB8008EE7BD /* ConfigViewModel.swift */,
+				BA444E3A23F45C99008EE7BD /* ConventionalGameViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BA052B4723F1990F005DCF81 /* Master_of_Pebolim */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BA052B7523F19910005DCF81 /* Build configuration list for PBXNativeTarget "Master_of_Pebolim" */;
+			buildPhases = (
+				BA052B4423F1990F005DCF81 /* Sources */,
+				BA052B4523F1990F005DCF81 /* Frameworks */,
+				BA052B4623F1990F005DCF81 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Master_of_Pebolim;
+			productName = Master_of_Pebolim;
+			productReference = BA052B4823F1990F005DCF81 /* Master_of_Pebolim.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BA052B6023F19910005DCF81 /* Master_of_PebolimTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BA052B7823F19910005DCF81 /* Build configuration list for PBXNativeTarget "Master_of_PebolimTests" */;
+			buildPhases = (
+				BA052B5D23F19910005DCF81 /* Sources */,
+				BA052B5E23F19910005DCF81 /* Frameworks */,
+				BA052B5F23F19910005DCF81 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BA052B6323F19910005DCF81 /* PBXTargetDependency */,
+			);
+			name = Master_of_PebolimTests;
+			productName = Master_of_PebolimTests;
+			productReference = BA052B6123F19910005DCF81 /* Master_of_PebolimTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		BA052B6B23F19910005DCF81 /* Master_of_PebolimUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BA052B7B23F19910005DCF81 /* Build configuration list for PBXNativeTarget "Master_of_PebolimUITests" */;
+			buildPhases = (
+				BA052B6823F19910005DCF81 /* Sources */,
+				BA052B6923F19910005DCF81 /* Frameworks */,
+				BA052B6A23F19910005DCF81 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BA052B6E23F19910005DCF81 /* PBXTargetDependency */,
+			);
+			name = Master_of_PebolimUITests;
+			productName = Master_of_PebolimUITests;
+			productReference = BA052B6C23F19910005DCF81 /* Master_of_PebolimUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BA052B4023F1990F005DCF81 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1130;
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = BRQ;
+				TargetAttributes = {
+					BA052B4723F1990F005DCF81 = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
+					BA052B6023F19910005DCF81 = {
+						CreatedOnToolsVersion = 11.3.1;
+						TestTargetID = BA052B4723F1990F005DCF81;
+					};
+					BA052B6B23F19910005DCF81 = {
+						CreatedOnToolsVersion = 11.3.1;
+						TestTargetID = BA052B4723F1990F005DCF81;
+					};
+				};
+			};
+			buildConfigurationList = BA052B4323F1990F005DCF81 /* Build configuration list for PBXProject "Master_of_Pebolim" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BA052B3F23F1990F005DCF81;
+			productRefGroup = BA052B4923F1990F005DCF81 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BA052B4723F1990F005DCF81 /* Master_of_Pebolim */,
+				BA052B6023F19910005DCF81 /* Master_of_PebolimTests */,
+				BA052B6B23F19910005DCF81 /* Master_of_PebolimUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BA052B4623F1990F005DCF81 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BA0214DD23FD74BA00EA2F67 /* pembas.mp4 in Resources */,
+				BA052B5B23F19910005DCF81 /* LaunchScreen.storyboard in Resources */,
+				BA052B5823F19910005DCF81 /* Assets.xcassets in Resources */,
+				BA052B5323F1990F005DCF81 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BA052B5F23F19910005DCF81 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BA052B6A23F19910005DCF81 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BA052B4423F1990F005DCF81 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BA444E3D23F45CB0008EE7BD /* ConventionalGameViewController.swift in Sources */,
+				BA052B5023F1990F005DCF81 /* ViewController.swift in Sources */,
+				BA052B5623F1990F005DCF81 /* Master_of_Pebolim.xcdatamodeld in Sources */,
+				BA444E3B23F45C99008EE7BD /* ConventionalGameViewModel.swift in Sources */,
+				BAE3072F23F1E91F005E1D7E /* Util.swift in Sources */,
+				BA052B4C23F1990F005DCF81 /* AppDelegate.swift in Sources */,
+				BA444E3923F43BB8008EE7BD /* ConfigViewModel.swift in Sources */,
+				BA052B4E23F1990F005DCF81 /* SceneDelegate.swift in Sources */,
+				BA444E3723F43B99008EE7BD /* ConfigViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BA052B5D23F19910005DCF81 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BA052B6623F19910005DCF81 /* Master_of_PebolimTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BA052B6823F19910005DCF81 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BA052B7123F19910005DCF81 /* Master_of_PebolimUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BA052B6323F19910005DCF81 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BA052B4723F1990F005DCF81 /* Master_of_Pebolim */;
+			targetProxy = BA052B6223F19910005DCF81 /* PBXContainerItemProxy */;
+		};
+		BA052B6E23F19910005DCF81 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BA052B4723F1990F005DCF81 /* Master_of_Pebolim */;
+			targetProxy = BA052B6D23F19910005DCF81 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		BA052B5123F1990F005DCF81 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BA052B5223F1990F005DCF81 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		BA052B5923F19910005DCF81 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BA052B5A23F19910005DCF81 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BA052B7323F19910005DCF81 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		BA052B7423F19910005DCF81 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BA052B7623F19910005DCF81 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Master_of_Pebolim/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.cursoios11.Master-of-Pebolim";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BA052B7723F19910005DCF81 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Master_of_Pebolim/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.cursoios11.Master-of-Pebolim";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		BA052B7923F19910005DCF81 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Master_of_PebolimTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.cursoios11.Master-of-PebolimTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Master_of_Pebolim.app/Master_of_Pebolim";
+			};
+			name = Debug;
+		};
+		BA052B7A23F19910005DCF81 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Master_of_PebolimTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.cursoios11.Master-of-PebolimTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Master_of_Pebolim.app/Master_of_Pebolim";
+			};
+			name = Release;
+		};
+		BA052B7C23F19910005DCF81 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Master_of_PebolimUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.cursoios11.Master-of-PebolimUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Master_of_Pebolim;
+			};
+			name = Debug;
+		};
+		BA052B7D23F19910005DCF81 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Master_of_PebolimUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.cursoios11.Master-of-PebolimUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Master_of_Pebolim;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BA052B4323F1990F005DCF81 /* Build configuration list for PBXProject "Master_of_Pebolim" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BA052B7323F19910005DCF81 /* Debug */,
+				BA052B7423F19910005DCF81 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BA052B7523F19910005DCF81 /* Build configuration list for PBXNativeTarget "Master_of_Pebolim" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BA052B7623F19910005DCF81 /* Debug */,
+				BA052B7723F19910005DCF81 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BA052B7823F19910005DCF81 /* Build configuration list for PBXNativeTarget "Master_of_PebolimTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BA052B7923F19910005DCF81 /* Debug */,
+				BA052B7A23F19910005DCF81 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BA052B7B23F19910005DCF81 /* Build configuration list for PBXNativeTarget "Master_of_PebolimUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BA052B7C23F19910005DCF81 /* Debug */,
+				BA052B7D23F19910005DCF81 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		BA052B5423F1990F005DCF81 /* Master_of_Pebolim.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				BA052B5523F1990F005DCF81 /* Master_of_Pebolim.xcdatamodel */,
+			);
+			currentVersion = BA052B5523F1990F005DCF81 /* Master_of_Pebolim.xcdatamodel */;
+			path = Master_of_Pebolim.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = BA052B4023F1990F005DCF81 /* Project object */;
+}
