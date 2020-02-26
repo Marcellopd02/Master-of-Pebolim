@@ -22,6 +22,7 @@
 		BA444E3B23F45C99008EE7BD /* ConventionalGameViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA444E3A23F45C99008EE7BD /* ConventionalGameViewModel.swift */; };
 		BA444E3D23F45CB0008EE7BD /* ConventionalGameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA444E3C23F45CB0008EE7BD /* ConventionalGameViewController.swift */; };
 		BAE3072F23F1E91F005E1D7E /* Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAE3072E23F1E91F005E1D7E /* Util.swift */; };
+		BAE40CAD2406B1370078E9CD /* RulesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAE40CAC2406B1370078E9CD /* RulesViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +64,7 @@
 		BA444E3A23F45C99008EE7BD /* ConventionalGameViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConventionalGameViewModel.swift; sourceTree = "<group>"; };
 		BA444E3C23F45CB0008EE7BD /* ConventionalGameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConventionalGameViewController.swift; sourceTree = "<group>"; };
 		BAE3072E23F1E91F005E1D7E /* Util.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Util.swift; sourceTree = "<group>"; };
+		BAE40CAC2406B1370078E9CD /* RulesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RulesViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -150,6 +152,7 @@
 			children = (
 				BA444E3623F43B99008EE7BD /* ConfigViewController.swift */,
 				BA444E3C23F45CB0008EE7BD /* ConventionalGameViewController.swift */,
+				BAE40CAC2406B1370078E9CD /* RulesViewController.swift */,
 				BA052B4F23F1990F005DCF81 /* ViewController.swift */,
 				BA052B5123F1990F005DCF81 /* Main.storyboard */,
 			);
@@ -305,6 +308,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BAE40CAD2406B1370078E9CD /* RulesViewController.swift in Sources */,
 				BA444E3D23F45CB0008EE7BD /* ConventionalGameViewController.swift in Sources */,
 				BA052B5023F1990F005DCF81 /* ViewController.swift in Sources */,
 				BA052B5623F1990F005DCF81 /* Master_of_Pebolim.xcdatamodeld in Sources */,

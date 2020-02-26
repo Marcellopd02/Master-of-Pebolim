@@ -10,17 +10,15 @@ import UIKit
 
 class ConventionalGameViewController: UIViewController {
 
-    //MARK: - Var's and Let's
+    //MARK: - Let ViewModel
     let viewModel = ConventionalGameViewModel()
     
     //MARK: - Outlet's
-    
     @IBOutlet weak var redPointLabel: UILabel!
     @IBOutlet weak var bluePointLabel: UILabel!
     @IBOutlet weak var counterTimeLabel: UILabel!
     
     //MARK: - LifeCycle
-    
     override func viewDidLoad() {
         super.viewDidLoad()
     }
@@ -36,6 +34,7 @@ class ConventionalGameViewController: UIViewController {
         UIDevice.current.setValue(value, forKey: "orientation")
     }
     
+    //MARK: Methods of orientation
     override var supportedInterfaceOrientations: UIInterfaceOrientationMask {
         return .landscapeLeft
     }
@@ -44,12 +43,12 @@ class ConventionalGameViewController: UIViewController {
         return true
     }
     
+    //MARK: Objc Method of time in label
     @objc func setTime(){
         counterTimeLabel.text = viewModel.timeLeft
     }
     
     //MARK: - Action's
-    
     @IBAction func addRedPoint(_ sender: UIButton) {
         
         guard let string = redPointLabel.text else { return }

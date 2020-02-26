@@ -8,14 +8,16 @@
 
 import Foundation
 
-class Util {
+struct Util {
 
+    //Before "1" -> After 1
     func convertStringToInt(string: String) -> Int{
         
         guard let integer = Int(string) else {return 0}
         return integer
     }
     
+    //Before 1 -> After "1"
     func convertIntToString(int: Int) -> String{
         
         let string = String(describing: int)

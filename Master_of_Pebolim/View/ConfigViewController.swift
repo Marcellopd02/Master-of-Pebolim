@@ -10,11 +10,14 @@ import UIKit
 
 class ConfigViewController: UIViewController {
     
+    //MARK: - Let ViewModel
     let viewModel = ConfigViewModel()
 
+    //MARK: - Outlet's
     @IBOutlet weak var timeLimit: UITextField!
     @IBOutlet weak var pointLimit: UITextField!
     
+    //MARK: - LifeCycle
     override func viewDidLoad() {
         super.viewDidLoad()
     }
@@ -24,6 +27,7 @@ class ConfigViewController: UIViewController {
         UIDevice.current.setValue(value, forKey: "orientation")
     }
     
+    //MARK: Methods of orientation
     override var supportedInterfaceOrientations: UIInterfaceOrientationMask {
         return .portrait
     }
@@ -32,6 +36,7 @@ class ConfigViewController: UIViewController {
         return true
     }
     
+    //MARK: - Action's
     @IBAction func saveConfig(_ sender: UIButton) {
         guard let time = timeLimit.text, let point = pointLimit.text else {return}
         viewModel.passLimits(time: time, points: point)

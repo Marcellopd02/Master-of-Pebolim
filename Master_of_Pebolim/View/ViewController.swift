@@ -11,8 +11,10 @@ import AVFoundation
 
 class ViewController: UIViewController {
     
+    //MARK: - Var Player of Video
     var player: AVPlayer?
     
+    //MARK: - LifeCycle
     override func viewDidLoad() {
         super.viewDidLoad()
         playBackgroundVideo()
@@ -24,6 +26,7 @@ class ViewController: UIViewController {
         UIDevice.current.setValue(value, forKey: "orientation")
     }
     
+    //MARK: Methods of orientation
     override var supportedInterfaceOrientations: UIInterfaceOrientationMask {
         return .portrait
     }
@@ -32,6 +35,7 @@ class ViewController: UIViewController {
         return true
     }
     
+    //MARK: - Method Background Video
     func playBackgroundVideo(){
         let path = Bundle.main.path(forResource: "pembas", ofType: ".mp4")
         guard let pathTratede = path else {return}

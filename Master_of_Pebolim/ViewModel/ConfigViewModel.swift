@@ -10,8 +10,10 @@ import Foundation
 
 class ConfigViewModel {
     
+    //MARK: - Let of another screen
     let conventional = ConventionalGameViewModel()
     
+    //MARK: - Data Passing
     func passLimits(time: String, points: String){
         conventional.setString(type: "T", string: time)
         conventional.setString(type: "P", string: points)

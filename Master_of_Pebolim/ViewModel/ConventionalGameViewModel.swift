@@ -10,18 +10,21 @@ import Foundation
 
 class ConventionalGameViewModel {
     
+    //MARK: - Static vars
     static var timeLimit: String = ""
     static var pointLimit: String = ""
     
+    //MARK: - Vars
     var timer: Timer?
     var count: Int = 180
     var timeLeft = "3:00"
     var running = false
     
+    //MARK: - Iniciate View
     func setString(type: String, string : String){
         if type == "P"{
             ConventionalGameViewModel.pointLimit = string
-        }else {
+        }else if type == "T" {
             ConventionalGameViewModel.timeLimit = string
         }
     }
@@ -37,6 +40,7 @@ class ConventionalGameViewModel {
         }
     }
     
+    //MARK: - Points
     func addInCount(string: String) -> String{
         
         var limit = Util().convertStringToInt(string: ConventionalGameViewModel.pointLimit)
@@ -65,6 +69,7 @@ class ConventionalGameViewModel {
         return "0"
     }
     
+    //MARK: - Timer
     func startAndPauseTimer(){
         
         if running == false {
