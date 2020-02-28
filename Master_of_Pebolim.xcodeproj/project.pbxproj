@@ -17,6 +17,7 @@
 		BA052B5B23F19910005DCF81 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA052B5923F19910005DCF81 /* LaunchScreen.storyboard */; };
 		BA052B6623F19910005DCF81 /* Master_of_PebolimTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA052B6523F19910005DCF81 /* Master_of_PebolimTests.swift */; };
 		BA052B7123F19910005DCF81 /* Master_of_PebolimUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA052B7023F19910005DCF81 /* Master_of_PebolimUITests.swift */; };
+		BA1F9DB1240800DB00267798 /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA1F9DB0240800DB00267798 /* Alert.swift */; };
 		BA444E3723F43B99008EE7BD /* ConfigViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA444E3623F43B99008EE7BD /* ConfigViewController.swift */; };
 		BA444E3923F43BB8008EE7BD /* ConfigViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA444E3823F43BB8008EE7BD /* ConfigViewModel.swift */; };
 		BA444E3B23F45C99008EE7BD /* ConventionalGameViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA444E3A23F45C99008EE7BD /* ConventionalGameViewModel.swift */; };
@@ -59,6 +60,7 @@
 		BA052B6C23F19910005DCF81 /* Master_of_PebolimUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Master_of_PebolimUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA052B7023F19910005DCF81 /* Master_of_PebolimUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Master_of_PebolimUITests.swift; sourceTree = "<group>"; };
 		BA052B7223F19910005DCF81 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BA1F9DB0240800DB00267798 /* Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
 		BA444E3623F43B99008EE7BD /* ConfigViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigViewController.swift; sourceTree = "<group>"; };
 		BA444E3823F43BB8008EE7BD /* ConfigViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigViewModel.swift; sourceTree = "<group>"; };
 		BA444E3A23F45C99008EE7BD /* ConventionalGameViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConventionalGameViewModel.swift; sourceTree = "<group>"; };
@@ -162,6 +164,7 @@
 			isa = PBXGroup;
 			children = (
 				BAE3072E23F1E91F005E1D7E /* Util.swift */,
+				BA1F9DB0240800DB00267798 /* Alert.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -324,6 +327,7 @@
 				BAE3072F23F1E91F005E1D7E /* Util.swift in Sources */,
 				BA052B4C23F1990F005DCF81 /* AppDelegate.swift in Sources */,
 				BA444E3923F43BB8008EE7BD /* ConfigViewModel.swift in Sources */,
+				BA1F9DB1240800DB00267798 /* Alert.swift in Sources */,
 				BA052B4E23F1990F005DCF81 /* SceneDelegate.swift in Sources */,
 				BA444E3723F43B99008EE7BD /* ConfigViewController.swift in Sources */,
 			);

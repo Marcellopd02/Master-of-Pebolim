@@ -8,17 +8,40 @@
 
 import Foundation
 
+enum Validate {
+    case redWinner
+    case blueWinner
+    case draw
+}
+
 class ConventionalGameViewModel {
     
     //MARK: - Static vars
-    static var timeLimit: String = ""
-    static var pointLimit: String = ""
+    static var timeLimit = ""
+    static var pointLimit = ""
     
     //MARK: - Vars
     var timer: Timer?
     var count: Int = 180
-    var timeLeft = "3:00"
+    var timeLeft = "03:00"
     var running = false
+    var value = ""
+    var end = false
+    
+    func testTime(bluePoint: String, redPoint: String) -> Validate?{
+        let blue = Util().convertStringToInt(string: bluePoint)
+        let red = Util().convertStringToInt(string: redPoint)
+        if end{
+            if blue < red{
+                return .redWinner
+            }else if blue == red{
+                return .draw
+            }else{
+                return .blueWinner
+            }
+        }
+        return nil
+    }
     
     //MARK: - Iniciate View
     func setString(type: String, string : String){
@@ -32,16 +55,20 @@ class ConventionalGameViewModel {
     func setInitialTime(){
         if ConventionalGameViewModel.timeLimit == ""{
             count = 180
-            timeLeft = "3:00"
+            timeLeft = "03:00"
         }else{
             count = Util().convertStringToInt(string: ConventionalGameViewModel.timeLimit) * 60
             let min = (count%3600)/60
-            timeLeft = "\(min):00"
+            if min < 10 {
+                timeLeft = "0\(min):00"
+            }else{
+                timeLeft = "\(min):00"
+            }
         }
     }
     
     //MARK: - Points
-    func addInCount(string: String) -> String{
+    func addInCount(string: String) -> Bool{
         
         var limit = Util().convertStringToInt(string: ConventionalGameViewModel.pointLimit)
         var interger = Util().convertStringToInt(string: string)
@@ -50,13 +77,20 @@ class ConventionalGameViewModel {
             if interger < limit{
                 interger += 1
             }
+            if interger == limit{
+                return false
+            }
         }else{
             if interger < limit{
                 interger += 1
             }
+            if interger == limit{
+                return false
+            }
         }
             
-        return Util().convertIntToString(int: interger)
+        value = Util().convertIntToString(int: interger)
+        return true
     }
     
     func subInCount(string: String) -> String{
@@ -99,11 +133,20 @@ class ConventionalGameViewModel {
         
         if count == 0 {
             stopTimer()
+            self.end = true
         }else{
             count -= 1
             let min = (count%3600)/60
             let sec = (count%3600)%60
-            timeLeft = "\(min):\(sec)"
+            if min < 10{
+                if sec < 10 {
+                    timeLeft = "0\(min):0\(sec)"
+                }else{
+                    timeLeft = "0\(min):\(sec)"
+                }
+            }else{
+                timeLeft = "\(min):\(sec)"
+            }
         }
     }
 }

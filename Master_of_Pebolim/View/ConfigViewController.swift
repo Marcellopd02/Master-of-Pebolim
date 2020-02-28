@@ -44,7 +44,7 @@ class ConfigViewController: UIViewController {
     }
     
     @IBAction func restaureConfig(_ sender: UIButton) {
-        viewModel.passLimits(time: "3", points: "3")
-        navigationController?.popViewController(animated: true)
+        timeLimit.text = "3"
+        pointLimit.text = "3"
     }
 }
