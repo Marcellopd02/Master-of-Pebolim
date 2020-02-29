@@ -17,6 +17,8 @@ class ConventionalGameViewController: UIViewController {
     @IBOutlet weak var redPointLabel: UILabel!
     @IBOutlet weak var bluePointLabel: UILabel!
     @IBOutlet weak var counterTimeLabel: UILabel!
+    @IBOutlet weak var redLimitLabel: UILabel!
+    @IBOutlet weak var blueLimitLabel: UILabel!
     
     //MARK: - Methods of Class
     override func viewDidLoad() {
@@ -28,6 +30,8 @@ class ConventionalGameViewController: UIViewController {
         redPointLabel.text = "0"
         bluePointLabel.text = "0"
         viewModel.setInitialTime()
+        redLimitLabel.text = viewModel.getLimit()
+        blueLimitLabel.text = viewModel.getLimit()
         counterTimeLabel.text = viewModel.timeLeft
         self.navigationController?.isNavigationBarHidden = false
         let value = UIInterfaceOrientation.landscapeLeft.rawValue

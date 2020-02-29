@@ -67,6 +67,15 @@ class ConventionalGameViewModel {
         }
     }
     
+    //MARK: -Limits
+    func getLimit() -> String{
+        if ConventionalGameViewModel.pointLimit != ""{
+            return "/" + ConventionalGameViewModel.pointLimit
+        }else{
+            return "/3"
+        }
+    }
+    
     //MARK: - Points
     func addInCount(string: String) -> Bool{
         

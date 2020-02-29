@@ -429,12 +429,23 @@ Um giro ilegal é definido quando o boneco der uma volta superior a 360º antes 
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="t5j-PS-3z4">
                                                 <rect key="frame" x="22.333333333333329" y="303.33333333333331" width="207.33333333333337" height="202.66666666666669"/>
                                                 <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="64g-kC-x8Y">
-                                                        <rect key="frame" x="73.333333333333329" y="0.0" width="60.666666666666671" height="119.66666666666667"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="100"/>
-                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                        <nil key="highlightedColor"/>
-                                                    </label>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="i2z-Ql-chJ">
+                                                        <rect key="frame" x="63.000000000000007" y="0.0" width="81.666666666666686" height="119.66666666666667"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="64g-kC-x8Y">
+                                                                <rect key="frame" x="0.0" y="0.0" width="60.666666666666664" height="119.66666666666667"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="100"/>
+                                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="/3" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rrb-3C-Ncj">
+                                                                <rect key="frame" x="60.666666666666657" y="0.0" width="21" height="119.66666666666667"/>
+                                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                    </stackView>
                                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="tQC-4n-HKh">
                                                         <rect key="frame" x="0.0" y="129.66666666666669" width="207.33333333333334" height="73"/>
                                                         <subviews>
@@ -475,12 +486,23 @@ Um giro ilegal é definido quando o boneco der uma volta superior a 360º antes 
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="4VM-YO-peO">
                                                 <rect key="frame" x="22.333333333333343" y="303.33333333333331" width="207.33333333333334" height="202.66666666666669"/>
                                                 <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="28Y-0f-L0r">
-                                                        <rect key="frame" x="73.333333333333343" y="0.0" width="60.666666666666657" height="119.66666666666667"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="100"/>
-                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                        <nil key="highlightedColor"/>
-                                                    </label>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mzS-nw-hpE">
+                                                        <rect key="frame" x="62.999999999999979" y="0.0" width="81.666666666666686" height="119.66666666666667"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="28Y-0f-L0r">
+                                                                <rect key="frame" x="0.0" y="0.0" width="60.666666666666664" height="119.66666666666667"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="100"/>
+                                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="/3" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w7q-o4-lSS">
+                                                                <rect key="frame" x="60.666666666666686" y="0.0" width="21" height="119.66666666666667"/>
+                                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                    </stackView>
                                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="ccQ-BQ-57X">
                                                         <rect key="frame" x="0.0" y="129.66666666666669" width="207.33333333333334" height="73"/>
                                                         <subviews>
@@ -578,8 +600,10 @@ Um giro ilegal é definido quando o boneco der uma volta superior a 360º antes 
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="blueLimitLabel" destination="w7q-o4-lSS" id="zEy-kg-T2B"/>
                         <outlet property="bluePointLabel" destination="28Y-0f-L0r" id="agA-39-3ra"/>
                         <outlet property="counterTimeLabel" destination="90y-av-atC" id="bEA-8p-Rk7"/>
+                        <outlet property="redLimitLabel" destination="Rrb-3C-Ncj" id="hZu-7j-Ric"/>
                         <outlet property="redPointLabel" destination="64g-kC-x8Y" id="Uo8-SA-bdA"/>
                     </connections>
                 </viewController>
