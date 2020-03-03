@@ -14,8 +14,12 @@ class ConfigViewModel {
     let conventional = ConventionalGameViewModel()
     
     //MARK: - Data Passing
-    func passLimits(time: String, points: String){
+    func passLimits(time: String, points: String) -> Bool{
+        if time == "0" || points == "0"{
+            return false
+        }
         conventional.setString(type: "T", string: time)
         conventional.setString(type: "P", string: points)
+        return true
     }
 }

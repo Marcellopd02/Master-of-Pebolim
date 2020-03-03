@@ -22,4 +22,11 @@ class Alert{
         }
         return alertController
     }
+    
+    func alertConfig() -> UIAlertController{
+        let alertController = UIAlertController(title: "Valor Invalido", message: "Digite um valor maior que 0", preferredStyle: .alert)
+        let backAlertAction = UIAlertAction(title: "Voltar", style: .cancel, handler: nil)
+        alertController.addAction(backAlertAction)
+        return alertController
+    }
 }

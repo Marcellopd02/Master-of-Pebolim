@@ -108,8 +108,8 @@
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Decide-se no par-ou-ímpar quem sai com a bola ou escolhe o lado da mesa." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="zP3-mF-RIe">
-                                                    <rect key="frame" x="20" y="68.666666666666671" width="336.66666666666669" height="33.666666666666664"/>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Decide-se no par-ou-ímpar quem sai com a bola ou escolhe o lado da mesa." textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="zP3-mF-RIe">
+                                                    <rect key="frame" x="20" y="68.666666666666671" width="374" height="33.666666666666664"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <nil key="textColor"/>
@@ -132,7 +132,7 @@
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="8jK-KR-Pmo">
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="8jK-KR-Pmo">
                                                     <rect key="frame" x="20" y="43.666666666666664" width="374" height="83.666666666666671"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <string key="text">A bola pode ser lançada pelo buraco lateral da mesa com efeito ou não, e também pode ser colocada com a mão no boneco central da barra de meio campo e inicia o jogo assim que tiver certeza que o time oposto está pronto para jogar.</string>
@@ -157,8 +157,8 @@
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="OV7-Ba-tZ8">
-                                                    <rect key="frame" x="20" y="35.666666666666679" width="368" height="100.33333333333333"/>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="OV7-Ba-tZ8">
+                                                    <rect key="frame" x="20" y="35.666666666666679" width="374" height="100.33333333333333"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <string key="text">O time que sofreu um gol, sai com a bola no meio de campo no jogador central da barra de 5, obedecendo a Regra 2 (serviço de bola).
 Uma bola que entra e sai do gol, conta como gol normal. 
@@ -184,8 +184,8 @@ Gol de goleiro não vale 2 a não ser que seja combinado de forma diferente, fic
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="7Kd-gf-a3W">
-                                                    <rect key="frame" x="20" y="52.666666666666671" width="372.66666666666669" height="67"/>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="7Kd-gf-a3W">
+                                                    <rect key="frame" x="20" y="52.666666666666671" width="374" height="67"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <string key="text">Quando a bola parar fora do alcance dos jogadores, deve ser colocada com a mão, na defesa que estiver mais próxima. Se a bola parar no meio de campo, sai com o time que tiver menos pontos (Regra 2).</string>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -209,8 +209,8 @@ Gol de goleiro não vale 2 a não ser que seja combinado de forma diferente, fic
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Se a bola sair da mesa, o time que serviu a bola pela última vez, serve novamente, sempre obedecendo a Regra 2." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="3xm-gC-YtZ">
-                                                    <rect key="frame" x="20" y="60.666666666666671" width="341" height="50.333333333333336"/>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Se a bola sair da mesa, o time que serviu a bola pela última vez, serve novamente, sempre obedecendo a Regra 2." textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="3xm-gC-YtZ">
+                                                    <rect key="frame" x="20" y="60.666666666666671" width="374" height="50.333333333333336"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <nil key="textColor"/>
@@ -233,8 +233,8 @@ Gol de goleiro não vale 2 a não ser que seja combinado de forma diferente, fic
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Os parceiros podem trocar de posição quantas vezes quiserem entre um gol e outro, ou entre partidas." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="SeA-1h-LjP">
-                                                    <rect key="frame" x="20" y="68.666666666666671" width="347.33333333333331" height="33.666666666666664"/>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Os parceiros podem trocar de posição quantas vezes quiserem entre um gol e outro, ou entre partidas." textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="SeA-1h-LjP">
+                                                    <rect key="frame" x="20" y="68.666666666666671" width="374" height="33.666666666666664"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <nil key="textColor"/>
@@ -257,8 +257,8 @@ Gol de goleiro não vale 2 a não ser que seja combinado de forma diferente, fic
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="FoU-DQ-hQK">
-                                                    <rect key="frame" x="20" y="52.666666666666671" width="368.33333333333331" height="67"/>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="FoU-DQ-hQK">
+                                                    <rect key="frame" x="20" y="52.666666666666671" width="374" height="67"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <string key="text">É proibido girar as barras mais do que 1 volta completa, também conhecido como “ventilador”, ou “roletada”.
 Um giro ilegal é definido quando o boneco der uma volta superior a 360º antes ou depois de tocar a bola.</string>
@@ -283,7 +283,7 @@ Um giro ilegal é definido quando o boneco der uma volta superior a 360º antes 
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Qualquer movimento que dificulte ou atrapalhe o controle ou uma jogada do adversário deverá ser punido como falta." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="5v0-Q5-qIP">
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Qualquer movimento que dificulte ou atrapalhe o controle ou uma jogada do adversário deverá ser punido como falta." textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="5v0-Q5-qIP">
                                                     <rect key="frame" x="20" y="60.666666666666671" width="374" height="50.333333333333336"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -307,7 +307,7 @@ Um giro ilegal é definido quando o boneco der uma volta superior a 360º antes 
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="1Cz-a3-DmZ">
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="1Cz-a3-DmZ">
                                                     <rect key="frame" x="20" y="52.666666666666671" width="374" height="67"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <string key="text">Não se deve colocar a mão dentro da área de jogo enquanto a bola estiver em movimento. Uma bola girando em seu próprio eixo é considerada bola viva e não deve ser tocada até que pare completamente.</string>
@@ -332,7 +332,7 @@ Um giro ilegal é definido quando o boneco der uma volta superior a 360º antes 
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="wDO-E3-E0e">
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="wDO-E3-E0e">
                                                     <rect key="frame" x="20" y="52.666666666666671" width="374" height="67"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <string key="text">Qualquer forma utilizada para distrair o oponente a fim de marcar um gol, exemplo: bater a barra do meio (sem bola) afim de obter um movimento de reflexo da defesa oposta para marcar um gol.</string>
@@ -357,8 +357,8 @@ Um giro ilegal é definido quando o boneco der uma volta superior a 360º antes 
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Não se deve demorar mais do que 20 segundos com a bola em sua posse, ou ficar &quot;enrolando&quot; para irritar o adversário." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="pee-VG-Ygw">
-                                                    <rect key="frame" x="20" y="60.666666666666671" width="355" height="50.333333333333336"/>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Não se deve demorar mais do que 20 segundos com a bola em sua posse, ou ficar &quot;enrolando&quot; para irritar o adversário." textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="pee-VG-Ygw">
+                                                    <rect key="frame" x="20" y="60.666666666666671" width="374" height="50.333333333333336"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <nil key="textColor"/>
@@ -381,7 +381,7 @@ Um giro ilegal é definido quando o boneco der uma volta superior a 360º antes 
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="kvF-bh-NVh">
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="kvF-bh-NVh">
                                                     <rect key="frame" x="20" y="25.666666666666671" width="374" height="150.66666666666666"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <string key="text">O desrespeito a qualquer uma das regras acima, deve ser punido da seguinte forma:
@@ -600,11 +600,15 @@ Um giro ilegal é definido quando o boneco der uma volta superior a 360º antes 
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="blueAddButton" destination="ouX-Ew-USx" id="X5A-Lr-Pj2"/>
                         <outlet property="blueLimitLabel" destination="w7q-o4-lSS" id="zEy-kg-T2B"/>
                         <outlet property="bluePointLabel" destination="28Y-0f-L0r" id="agA-39-3ra"/>
+                        <outlet property="blueSubButton" destination="WGa-CB-kEr" id="SXJ-EG-Z2a"/>
                         <outlet property="counterTimeLabel" destination="90y-av-atC" id="bEA-8p-Rk7"/>
+                        <outlet property="redAddButton" destination="WWS-17-w9z" id="9lO-Lr-Fjb"/>
                         <outlet property="redLimitLabel" destination="Rrb-3C-Ncj" id="hZu-7j-Ric"/>
                         <outlet property="redPointLabel" destination="64g-kC-x8Y" id="Uo8-SA-bdA"/>
+                        <outlet property="redSubButton" destination="76r-eT-Zad" id="ieI-gF-dia"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uHg-IT-1da" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

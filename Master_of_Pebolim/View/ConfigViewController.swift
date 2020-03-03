@@ -39,8 +39,11 @@ class ConfigViewController: UIViewController {
     //MARK: - Action's
     @IBAction func saveConfig(_ sender: UIButton) {
         guard let time = timeLimit.text, let point = pointLimit.text else {return}
-        viewModel.passLimits(time: time, points: point)
-        navigationController?.popViewController(animated: true)
+        if viewModel.passLimits(time: time, points: point){
+            navigationController?.popViewController(animated: true)
+        }else{
+            present(Alert().alertConfig(), animated: true, completion: nil)
+        }
     }
     
     @IBAction func restaureConfig(_ sender: UIButton) {

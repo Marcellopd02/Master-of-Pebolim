@@ -19,6 +19,10 @@ class ConventionalGameViewController: UIViewController {
     @IBOutlet weak var counterTimeLabel: UILabel!
     @IBOutlet weak var redLimitLabel: UILabel!
     @IBOutlet weak var blueLimitLabel: UILabel!
+    @IBOutlet weak var redAddButton: UIButton!
+    @IBOutlet weak var blueAddButton: UIButton!
+    @IBOutlet weak var redSubButton: UIButton!
+    @IBOutlet weak var blueSubButton: UIButton!
     
     //MARK: - Methods of Class
     override func viewDidLoad() {
@@ -30,6 +34,10 @@ class ConventionalGameViewController: UIViewController {
         redPointLabel.text = "0"
         bluePointLabel.text = "0"
         viewModel.setInitialTime()
+        redAddButton.isEnabled = false
+        blueAddButton.isEnabled = false
+        redSubButton.isEnabled = false
+        blueSubButton.isEnabled = false
         redLimitLabel.text = viewModel.getLimit()
         blueLimitLabel.text = viewModel.getLimit()
         counterTimeLabel.text = viewModel.timeLeft
@@ -121,13 +129,19 @@ class ConventionalGameViewController: UIViewController {
     }
     
     @IBAction func playAndPauseTimer(_ sender: UIButton) {
-//        guard let RP = redPointLabel.text, let BP = bluePointLabel.text else { return }
+        redAddButton.isEnabled = true
+        blueAddButton.isEnabled = true
+        redSubButton.isEnabled = true
+        blueSubButton.isEnabled = true
         viewModel.startAndPauseTimer()
         _ = Timer.scheduledTimer(timeInterval: 1.0, target: self, selector: #selector(setTime), userInfo: nil, repeats: true)
     }
     
     @IBAction func resetTimer(_ sender: UIButton) {
-        
+        redAddButton.isEnabled = false
+        blueAddButton.isEnabled = false
+        redSubButton.isEnabled = false
+        blueSubButton.isEnabled = false
         defaultValues()
     }
 }
