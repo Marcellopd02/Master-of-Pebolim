@@ -19,6 +19,7 @@ class ConventionalGameViewModel {
     //MARK: - Static vars
     static var timeLimit = ""
     static var pointLimit = ""
+    static var mode = false
     
     //MARK: - Vars
     var timer: Timer?
@@ -27,8 +28,19 @@ class ConventionalGameViewModel {
     var running = false
     var value = ""
     var end = false
+    var redCounter = 1
+    var blueCounter = 1
+    
+    func isTrue() -> Bool{
+        if ConventionalGameViewModel.mode{
+            return true
+        }else{
+            return false
+        }
+    }
     
     func testTime(bluePoint: String, redPoint: String) -> Validate?{
+        
         let blue = Util().convertStringToInt(string: bluePoint)
         let red = Util().convertStringToInt(string: redPoint)
         if end{
@@ -44,7 +56,12 @@ class ConventionalGameViewModel {
     }
     
     //MARK: - Iniciate View
+    func setMode(_ bool: Bool){
+        ConventionalGameViewModel.mode = bool
+    }
+    
     func setString(type: String, string : String){
+        
         if type == "P"{
             ConventionalGameViewModel.pointLimit = string
         }else if type == "T" {
@@ -53,6 +70,7 @@ class ConventionalGameViewModel {
     }
     
     func setInitialTime(){
+        
         if ConventionalGameViewModel.timeLimit == ""{
             count = 180
             timeLeft = "03:00"
@@ -68,12 +86,23 @@ class ConventionalGameViewModel {
     }
     
     //MARK: - Limits
-    func getLimit() -> String{
+    func getPointLimit() -> String{
+        
         if ConventionalGameViewModel.pointLimit != ""{
             return "/" + ConventionalGameViewModel.pointLimit
         }else{
             return "/3"
         }
+    }
+    
+    func getLimits(string: String) -> String{
+        
+        if string == "T"{
+            let time = ConventionalGameViewModel.timeLimit
+            return time
+        }
+        let point = ConventionalGameViewModel.pointLimit
+        return point
     }
     
     //MARK: - Points
@@ -97,7 +126,6 @@ class ConventionalGameViewModel {
                 return false
             }
         }
-            
         value = Util().convertIntToString(int: interger)
         return true
     }

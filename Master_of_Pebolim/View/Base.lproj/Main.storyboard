@@ -427,10 +427,16 @@ Um giro ilegal é definido quando o boneco der uma volta superior a 360º antes 
                                         <rect key="frame" x="0.0" y="0.0" width="252" height="809"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="t5j-PS-3z4">
-                                                <rect key="frame" x="22.333333333333329" y="303.33333333333331" width="207.33333333333337" height="202.66666666666669"/>
+                                                <rect key="frame" x="22.333333333333329" y="284.33333333333331" width="207.33333333333337" height="240.33333333333331"/>
                                                 <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0/2" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zRS-Ws-azX">
+                                                        <rect key="frame" x="86" y="0.0" width="35.666666666666657" height="27.666666666666668"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
                                                     <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="i2z-Ql-chJ">
-                                                        <rect key="frame" x="63.000000000000007" y="0.0" width="81.666666666666686" height="119.66666666666667"/>
+                                                        <rect key="frame" x="63.000000000000007" y="37.666666666666693" width="81.666666666666686" height="119.66666666666669"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="64g-kC-x8Y">
                                                                 <rect key="frame" x="0.0" y="0.0" width="60.666666666666664" height="119.66666666666667"/>
@@ -447,7 +453,7 @@ Um giro ilegal é definido quando o boneco der uma volta superior a 360º antes 
                                                         </subviews>
                                                     </stackView>
                                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="tQC-4n-HKh">
-                                                        <rect key="frame" x="0.0" y="129.66666666666669" width="207.33333333333334" height="73"/>
+                                                        <rect key="frame" x="0.0" y="167.33333333333331" width="207.33333333333334" height="73"/>
                                                         <subviews>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="76r-eT-Zad">
                                                                 <rect key="frame" x="0.0" y="0.0" width="78.666666666666671" height="73"/>
@@ -484,10 +490,16 @@ Um giro ilegal é definido quando o boneco der uma volta superior a 360º antes 
                                         <rect key="frame" x="252" y="0.0" width="252" height="809"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="4VM-YO-peO">
-                                                <rect key="frame" x="22.333333333333343" y="303.33333333333331" width="207.33333333333334" height="202.66666666666669"/>
+                                                <rect key="frame" x="22.333333333333343" y="284.33333333333331" width="207.33333333333334" height="240.33333333333331"/>
                                                 <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0/2" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lkB-ry-kdO">
+                                                        <rect key="frame" x="85.999999999999972" y="0.0" width="35.666666666666657" height="27.666666666666668"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
                                                     <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mzS-nw-hpE">
-                                                        <rect key="frame" x="62.999999999999979" y="0.0" width="81.666666666666686" height="119.66666666666667"/>
+                                                        <rect key="frame" x="62.999999999999979" y="37.666666666666693" width="81.666666666666686" height="119.66666666666669"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="28Y-0f-L0r">
                                                                 <rect key="frame" x="0.0" y="0.0" width="60.666666666666664" height="119.66666666666667"/>
@@ -504,7 +516,7 @@ Um giro ilegal é definido quando o boneco der uma volta superior a 360º antes 
                                                         </subviews>
                                                     </stackView>
                                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="ccQ-BQ-57X">
-                                                        <rect key="frame" x="0.0" y="129.66666666666669" width="207.33333333333334" height="73"/>
+                                                        <rect key="frame" x="0.0" y="167.33333333333331" width="207.33333333333334" height="73"/>
                                                         <subviews>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WGa-CB-kEr">
                                                                 <rect key="frame" x="0.0" y="0.0" width="78.666666666666671" height="73"/>
@@ -603,11 +615,13 @@ Um giro ilegal é definido quando o boneco der uma volta superior a 360º antes 
                         <outlet property="blueAddButton" destination="ouX-Ew-USx" id="X5A-Lr-Pj2"/>
                         <outlet property="blueLimitLabel" destination="w7q-o4-lSS" id="zEy-kg-T2B"/>
                         <outlet property="bluePointLabel" destination="28Y-0f-L0r" id="agA-39-3ra"/>
+                        <outlet property="bluePointsInMode" destination="lkB-ry-kdO" id="YaU-eQ-XON"/>
                         <outlet property="blueSubButton" destination="WGa-CB-kEr" id="SXJ-EG-Z2a"/>
                         <outlet property="counterTimeLabel" destination="90y-av-atC" id="bEA-8p-Rk7"/>
                         <outlet property="redAddButton" destination="WWS-17-w9z" id="9lO-Lr-Fjb"/>
                         <outlet property="redLimitLabel" destination="Rrb-3C-Ncj" id="hZu-7j-Ric"/>
                         <outlet property="redPointLabel" destination="64g-kC-x8Y" id="Uo8-SA-bdA"/>
+                        <outlet property="redPointsInMode" destination="zRS-Ws-azX" id="GxA-8Y-F2S"/>
                         <outlet property="redSubButton" destination="76r-eT-Zad" id="ieI-gF-dia"/>
                     </connections>
                 </viewController>
@@ -623,8 +637,8 @@ Um giro ilegal é definido quando o boneco der uma volta superior a 360º antes 
                         <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="WdL-bW-TeP">
-                                <rect key="frame" x="20" y="65" width="284.33333333333331" height="80"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="WdL-bW-TeP">
+                                <rect key="frame" x="20" y="65" width="284.33333333333331" height="149"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="53" translatesAutoresizingMaskIntoConstraints="NO" id="F9A-HX-Acn">
                                         <rect key="frame" x="0.0" y="0.0" width="284.33333333333331" height="34"/>
@@ -649,7 +663,7 @@ Um giro ilegal é definido quando o boneco der uma volta superior a 360º antes 
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="63" translatesAutoresizingMaskIntoConstraints="NO" id="xNe-LY-faL">
-                                        <rect key="frame" x="0.0" y="46" width="284.33333333333331" height="34"/>
+                                        <rect key="frame" x="0.0" y="59" width="284.33333333333331" height="34"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tempo da partida (min):" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XtD-IJ-1ZC">
                                                 <rect key="frame" x="0.0" y="0.0" width="183.33333333333334" height="34"/>
@@ -670,10 +684,27 @@ Um giro ilegal é definido quando o boneco der uma volta superior a 360º antes 
                                             </textField>
                                         </subviews>
                                     </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jgs-41-RpY">
+                                        <rect key="frame" x="0.0" y="118" width="284.33333333333331" height="31"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Modo Melhor de 3" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Evf-5H-el9">
+                                                <rect key="frame" x="0.0" y="0.0" width="235.33333333333334" height="31"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="vtJ-tr-8FW">
+                                                <rect key="frame" x="235.33333333333337" y="0.0" width="51" height="31"/>
+                                                <connections>
+                                                    <action selector="switchTapped:" destination="0aZ-R8-q7s" eventType="valueChanged" id="yj2-2F-X4a"/>
+                                                </connections>
+                                            </switch>
+                                        </subviews>
+                                    </stackView>
                                 </subviews>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qGA-xR-yOV">
-                                <rect key="frame" x="82" y="255" width="250" height="40"/>
+                                <rect key="frame" x="82" y="314" width="250" height="40"/>
                                 <color key="backgroundColor" red="0.25882352939999997" green="0.25882352939999997" blue="0.25882352939999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="77a-cf-oOO"/>
@@ -692,7 +723,7 @@ Um giro ilegal é definido quando o boneco der uma volta superior a 360º antes 
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rBq-6J-zH7">
-                                <rect key="frame" x="82" y="340" width="250" height="40"/>
+                                <rect key="frame" x="82" y="399" width="250" height="40"/>
                                 <color key="backgroundColor" red="0.25882352939999997" green="0.25882352939999997" blue="0.25882352939999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="250" id="7JC-Oz-KMe"/>
@@ -717,7 +748,7 @@ Um giro ilegal é definido quando o boneco der uma volta superior a 360º antes 
                             <constraint firstItem="WdL-bW-TeP" firstAttribute="leading" secondItem="lv2-0Q-vJ4" secondAttribute="leading" constant="20" id="TJN-LS-gvG"/>
                             <constraint firstItem="WdL-bW-TeP" firstAttribute="top" secondItem="lv2-0Q-vJ4" secondAttribute="top" constant="65" id="UWz-kE-zqt"/>
                             <constraint firstItem="rBq-6J-zH7" firstAttribute="top" secondItem="qGA-xR-yOV" secondAttribute="bottom" constant="45" id="Z9Q-by-Ty0"/>
-                            <constraint firstItem="qGA-xR-yOV" firstAttribute="top" secondItem="WdL-bW-TeP" secondAttribute="bottom" constant="110" id="nIu-58-IUY"/>
+                            <constraint firstItem="qGA-xR-yOV" firstAttribute="top" secondItem="WdL-bW-TeP" secondAttribute="bottom" constant="100" id="mVY-gT-ng1"/>
                             <constraint firstItem="rBq-6J-zH7" firstAttribute="centerX" secondItem="kva-cJ-p6H" secondAttribute="centerX" id="tCD-8n-uFX"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="lv2-0Q-vJ4"/>
@@ -725,12 +756,13 @@ Um giro ilegal é definido quando o boneco der uma volta superior a 360º antes 
                     <navigationItem key="navigationItem" id="FX9-Tp-zhf"/>
                     <connections>
                         <outlet property="pointLimit" destination="XTW-EA-x4O" id="1OA-L5-EnK"/>
+                        <outlet property="switchMode" destination="vtJ-tr-8FW" id="WPg-7t-5EP"/>
                         <outlet property="timeLimit" destination="4aZ-jn-4yT" id="XVd-gg-bHe"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aCR-k3-UEp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3114" y="-172"/>
+            <point key="canvasLocation" x="3113.04347826087" y="-172.09821428571428"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="003-7C-cPT">

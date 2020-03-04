@@ -12,6 +12,7 @@ class RulesViewController: UITableViewController{
     
     //MARK: - LifeCycle
     override func viewDidLoad() {
+        
         super.viewDidLoad()
         self.navigationController?.isNavigationBarHidden = false
     }

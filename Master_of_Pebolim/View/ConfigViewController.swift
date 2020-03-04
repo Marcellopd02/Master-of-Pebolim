@@ -16,28 +16,37 @@ class ConfigViewController: UIViewController {
     //MARK: - Outlet's
     @IBOutlet weak var timeLimit: UITextField!
     @IBOutlet weak var pointLimit: UITextField!
+    @IBOutlet weak var switchMode: UISwitch!
     
     //MARK: - LifeCycle
     override func viewDidLoad() {
+        
         super.viewDidLoad()
     }
     
     override func viewWillAppear(_ animated: Bool) {
+        
         let value = UIInterfaceOrientation.portrait.rawValue
         UIDevice.current.setValue(value, forKey: "orientation")
+        timeLimit.placeholder = viewModel.getLimits("T")
+        pointLimit.placeholder = viewModel.getLimits("P")
+        switchMode.isOn = viewModel.getMode()
     }
     
     //MARK: Methods of orientation
     override var supportedInterfaceOrientations: UIInterfaceOrientationMask {
+        
         return .portrait
     }
     
     override var shouldAutorotate: Bool {
+        
         return true
     }
     
     //MARK: - Action's
     @IBAction func saveConfig(_ sender: UIButton) {
+        
         guard let time = timeLimit.text, let point = pointLimit.text else {return}
         if viewModel.passLimits(time: time, points: point){
             navigationController?.popViewController(animated: true)
@@ -47,7 +56,17 @@ class ConfigViewController: UIViewController {
     }
     
     @IBAction func restaureConfig(_ sender: UIButton) {
+        
         timeLimit.text = "3"
         pointLimit.text = "3"
+    }
+    
+    @IBAction func switchTapped(_ sender: UISwitch) {
+        
+        if switchMode.isOn {
+            viewModel.changeMode(switchMode.isOn)
+        }else{
+            viewModel.changeMode(switchMode.isOn)
+        }
     }
 }

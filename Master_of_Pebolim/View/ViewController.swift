@@ -16,11 +16,13 @@ class ViewController: UIViewController {
     
     //MARK: - LifeCycle
     override func viewDidLoad() {
+        
         super.viewDidLoad()
         playBackgroundVideo()
     }
     
     override func viewWillAppear(_ animated: Bool) {
+        
         self.navigationController?.isNavigationBarHidden = true
         let value = UIInterfaceOrientation.portrait.rawValue
         UIDevice.current.setValue(value, forKey: "orientation")
@@ -28,15 +30,18 @@ class ViewController: UIViewController {
     
     //MARK: Methods of orientation
     override var supportedInterfaceOrientations: UIInterfaceOrientationMask {
+        
         return .portrait
     }
     
     override var shouldAutorotate: Bool {
+        
         return true
     }
     
     //MARK: - Method Background Video
     func playBackgroundVideo(){
+        
         let path = Bundle.main.path(forResource: "pembas", ofType: ".mp4")
         guard let pathTratede = path else {return}
         player = AVPlayer(url: URL(fileURLWithPath: pathTratede))
@@ -52,6 +57,7 @@ class ViewController: UIViewController {
     }
 
     @objc func playerItemDidReachEnd(){
+        
         player!.seek(to: CMTime.zero)
     }
 }

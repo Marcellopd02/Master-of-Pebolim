@@ -23,6 +23,8 @@ class ConventionalGameViewController: UIViewController {
     @IBOutlet weak var blueAddButton: UIButton!
     @IBOutlet weak var redSubButton: UIButton!
     @IBOutlet weak var blueSubButton: UIButton!
+    @IBOutlet weak var redPointsInMode: UILabel!
+    @IBOutlet weak var bluePointsInMode: UILabel!
     
     //MARK: - Methods of Class
     override func viewDidLoad() {
@@ -31,6 +33,13 @@ class ConventionalGameViewController: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         
+        if viewModel.isTrue(){
+            redPointsInMode.text = "0/2"
+            bluePointsInMode.text = "0/2"
+        }else{
+            redPointsInMode.text = ""
+            bluePointsInMode.text = ""
+        }
         redPointLabel.text = "0"
         bluePointLabel.text = "0"
         viewModel.setInitialTime()
@@ -38,8 +47,8 @@ class ConventionalGameViewController: UIViewController {
         blueAddButton.isEnabled = false
         redSubButton.isEnabled = false
         blueSubButton.isEnabled = false
-        redLimitLabel.text = viewModel.getLimit()
-        blueLimitLabel.text = viewModel.getLimit()
+        redLimitLabel.text = viewModel.getPointLimit()
+        blueLimitLabel.text = viewModel.getPointLimit()
         counterTimeLabel.text = viewModel.timeLeft
         self.navigationController?.isNavigationBarHidden = false
         let value = UIInterfaceOrientation.landscapeLeft.rawValue
@@ -47,23 +56,31 @@ class ConventionalGameViewController: UIViewController {
     }
     
     func defaultValues(){
+        
         viewModel.resetTimer()
         counterTimeLabel.text = viewModel.timeLeft
         redPointLabel.text = "0"
         bluePointLabel.text = "0"
+        redAddButton.isEnabled = false
+        blueAddButton.isEnabled = false
+        redSubButton.isEnabled = false
+        blueSubButton.isEnabled = false
     }
     
     //MARK: Methods of orientation
     override var supportedInterfaceOrientations: UIInterfaceOrientationMask {
+        
         return .landscapeLeft
     }
     
     override var shouldAutorotate: Bool {
+        
         return true
     }
     
     //MARK: Objc Method of time in label
     @objc func setTime(){
+        
         counterTimeLabel.text = viewModel.timeLeft
         if viewModel.end{
             guard let RP = redPointLabel.text, let BP = bluePointLabel.text else { return }
@@ -71,14 +88,38 @@ class ConventionalGameViewController: UIViewController {
                 let winner = viewModel.testTime(bluePoint: BP, redPoint: RP)
                 switch winner {
                 case .blueWinner:
-                    present(Alert().createAlert(team: "Azul", draw: nil), animated: true, completion: nil)
-                    viewModel.end = false
-                    defaultValues()
+                    if viewModel.blueCounter < 2{
+                        present(Alert().alertMode(), animated: true, completion: nil)
+                        viewModel.blueCounter += 1
+                        bluePointsInMode.text = "1/2"
+                        viewModel.end = false
+                        defaultValues()
+                    }else{
+                        present(Alert().createAlert(team: "Azul", draw: nil), animated: true, completion: nil)
+                        viewModel.end = false
+                        defaultValues()
+                        viewModel.redCounter = 1
+                        viewModel.blueCounter = 1
+                        redPointsInMode.text = "0/2"
+                        bluePointsInMode.text = "0/2"
+                    }
                     break
                 case .redWinner:
-                    present(Alert().createAlert(team: "Vermelho", draw: nil), animated: true, completion: nil)
-                    viewModel.end = false
-                    defaultValues()
+                    if viewModel.redCounter < 2{
+                        present(Alert().alertMode(), animated: true, completion: nil)
+                        viewModel.redCounter += 1
+                        redPointsInMode.text = "1/2"
+                        viewModel.end = false
+                        defaultValues()
+                    }else{
+                        present(Alert().createAlert(team: "Vermelho", draw: nil), animated: true, completion: nil)
+                        viewModel.end = false
+                        defaultValues()
+                        viewModel.redCounter = 1
+                        viewModel.blueCounter = 1
+                        redPointsInMode.text = "0/2"
+                        bluePointsInMode.text = "0/2"
+                    }
                     break
                 case .draw:
                     present(Alert().createAlert(team: "", draw: true), animated: true, completion: nil)
@@ -100,8 +141,19 @@ class ConventionalGameViewController: UIViewController {
         if viewModel.addInCount(string: string){
             redPointLabel.text = viewModel.value
         }else{
-            present(Alert().createAlert(team: "Vermelho", draw: nil), animated: true, completion: nil)
-            defaultValues()
+            if viewModel.redCounter < 2{
+                present(Alert().alertMode(), animated: true, completion: nil)
+                viewModel.redCounter += 1
+                redPointsInMode.text = "1/2"
+                defaultValues()
+            }else{
+                present(Alert().createAlert(team: "Vermelho", draw: nil), animated: true, completion: nil)
+                defaultValues()
+                viewModel.redCounter = 1
+                viewModel.blueCounter = 1
+                redPointsInMode.text = "0/2"
+                bluePointsInMode.text = "0/2"
+            }
         }
     }
     
@@ -117,8 +169,19 @@ class ConventionalGameViewController: UIViewController {
         if viewModel.addInCount(string: string){
             bluePointLabel.text = viewModel.value
         }else{
-            present(Alert().createAlert(team: "Azul", draw: nil), animated: true, completion: nil)
-            defaultValues()
+            if viewModel.blueCounter < 2{
+                present(Alert().alertMode(), animated: true, completion: nil)
+                viewModel.blueCounter += 1
+                bluePointsInMode.text = "1/2"
+                defaultValues()
+            }else{
+                present(Alert().createAlert(team: "Azul", draw: nil), animated: true, completion: nil)
+                defaultValues()
+                viewModel.redCounter = 1
+                viewModel.blueCounter = 1
+                redPointsInMode.text = "0/2"
+                bluePointsInMode.text = "0/2"
+            }
         }
     }
     
@@ -129,6 +192,7 @@ class ConventionalGameViewController: UIViewController {
     }
     
     @IBAction func playAndPauseTimer(_ sender: UIButton) {
+        
         redAddButton.isEnabled = true
         blueAddButton.isEnabled = true
         redSubButton.isEnabled = true
@@ -138,6 +202,7 @@ class ConventionalGameViewController: UIViewController {
     }
     
     @IBAction func resetTimer(_ sender: UIButton) {
+        
         redAddButton.isEnabled = false
         blueAddButton.isEnabled = false
         redSubButton.isEnabled = false

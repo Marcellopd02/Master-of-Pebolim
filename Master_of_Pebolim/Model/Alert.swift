@@ -29,4 +29,11 @@ class Alert{
         alertController.addAction(backAlertAction)
         return alertController
     }
+    
+    func alertMode() -> UIAlertController{
+        let alertController = UIAlertController(title: "PARABÉNS!", message: "Ganhe mais uma partida para vencer o jogo", preferredStyle: .alert)
+        let backAlertAction = UIAlertAction(title: "Voltar", style: .cancel, handler: nil)
+        alertController.addAction(backAlertAction)
+        return alertController
+    }
 }
