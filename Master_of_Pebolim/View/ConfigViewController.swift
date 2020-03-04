@@ -48,7 +48,8 @@ class ConfigViewController: UIViewController {
     @IBAction func saveConfig(_ sender: UIButton) {
         
         guard let time = timeLimit.text, let point = pointLimit.text else {return}
-        if viewModel.passLimits(time: time, points: point){
+        guard let timePlaceholder = timeLimit.placeholder, let pointPlaceholder = pointLimit.placeholder else {return}
+        if viewModel.passLimits(time: time, points: point, timePlaceholder: timePlaceholder, pointsPlaceholder: pointPlaceholder){
             navigationController?.popViewController(animated: true)
         }else{
             present(Alert().alertConfig(), animated: true, completion: nil)
@@ -59,6 +60,8 @@ class ConfigViewController: UIViewController {
         
         timeLimit.text = "3"
         pointLimit.text = "3"
+        switchMode.isOn = false
+        viewModel.changeMode(switchMode.isOn)
     }
     
     @IBAction func switchTapped(_ sender: UISwitch) {

@@ -40,13 +40,14 @@ class ConventionalGameViewController: UIViewController {
             redPointsInMode.text = ""
             bluePointsInMode.text = ""
         }
-        redPointLabel.text = "0"
-        bluePointLabel.text = "0"
         viewModel.setInitialTime()
-        redAddButton.isEnabled = false
-        blueAddButton.isEnabled = false
-        redSubButton.isEnabled = false
-        blueSubButton.isEnabled = false
+//        redPointLabel.text = "0"
+//        bluePointLabel.text = "0"
+//        redAddButton.isEnabled = false
+//        blueAddButton.isEnabled = false
+//        redSubButton.isEnabled = false
+//        blueSubButton.isEnabled = false
+        defaultValues()
         redLimitLabel.text = viewModel.getPointLimit()
         blueLimitLabel.text = viewModel.getPointLimit()
         counterTimeLabel.text = viewModel.timeLeft
