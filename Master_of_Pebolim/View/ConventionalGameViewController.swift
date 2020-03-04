@@ -41,12 +41,6 @@ class ConventionalGameViewController: UIViewController {
             bluePointsInMode.text = ""
         }
         viewModel.setInitialTime()
-//        redPointLabel.text = "0"
-//        bluePointLabel.text = "0"
-//        redAddButton.isEnabled = false
-//        blueAddButton.isEnabled = false
-//        redSubButton.isEnabled = false
-//        blueSubButton.isEnabled = false
         defaultValues()
         redLimitLabel.text = viewModel.getPointLimit()
         blueLimitLabel.text = viewModel.getPointLimit()
@@ -89,37 +83,49 @@ class ConventionalGameViewController: UIViewController {
                 let winner = viewModel.testTime(bluePoint: BP, redPoint: RP)
                 switch winner {
                 case .blueWinner:
-                    if viewModel.blueCounter < 2{
-                        present(Alert().alertMode(), animated: true, completion: nil)
-                        viewModel.blueCounter += 1
-                        bluePointsInMode.text = "1/2"
-                        viewModel.end = false
-                        defaultValues()
+                    if viewModel.isTrue(){
+                        if viewModel.blueCounter < 2{
+                            present(Alert().alertMode(), animated: true, completion: nil)
+                            viewModel.blueCounter += 1
+                            bluePointsInMode.text = "1/2"
+                            viewModel.end = false
+                            defaultValues()
+                        }else{
+                            present(Alert().createAlert(team: "Azul", draw: nil), animated: true, completion: nil)
+                            viewModel.end = false
+                            defaultValues()
+                            viewModel.redCounter = 1
+                            viewModel.blueCounter = 1
+                            redPointsInMode.text = "0/2"
+                            bluePointsInMode.text = "0/2"
+                        }
                     }else{
                         present(Alert().createAlert(team: "Azul", draw: nil), animated: true, completion: nil)
                         viewModel.end = false
                         defaultValues()
-                        viewModel.redCounter = 1
-                        viewModel.blueCounter = 1
-                        redPointsInMode.text = "0/2"
-                        bluePointsInMode.text = "0/2"
                     }
                     break
                 case .redWinner:
-                    if viewModel.redCounter < 2{
-                        present(Alert().alertMode(), animated: true, completion: nil)
-                        viewModel.redCounter += 1
-                        redPointsInMode.text = "1/2"
-                        viewModel.end = false
-                        defaultValues()
+                    if viewModel.isTrue(){
+                        if viewModel.redCounter < 2{
+                            present(Alert().alertMode(), animated: true, completion: nil)
+                            viewModel.redCounter += 1
+                            redPointsInMode.text = "1/2"
+                            viewModel.end = false
+                            defaultValues()
+                        }else{
+                            present(Alert().createAlert(team: "Vermelho", draw: nil), animated: true, completion: nil)
+                            viewModel.end = false
+                            defaultValues()
+                            viewModel.redCounter = 1
+                            viewModel.blueCounter = 1
+                            redPointsInMode.text = "0/2"
+                            bluePointsInMode.text = "0/2"
+                        }
                     }else{
                         present(Alert().createAlert(team: "Vermelho", draw: nil), animated: true, completion: nil)
                         viewModel.end = false
                         defaultValues()
-                        viewModel.redCounter = 1
-                        viewModel.blueCounter = 1
-                        redPointsInMode.text = "0/2"
-                        bluePointsInMode.text = "0/2"
                     }
                     break
                 case .draw:
@@ -142,18 +148,23 @@ class ConventionalGameViewController: UIViewController {
         if viewModel.addInCount(string: string){
             redPointLabel.text = viewModel.value
         }else{
-            if viewModel.redCounter < 2{
-                present(Alert().alertMode(), animated: true, completion: nil)
-                viewModel.redCounter += 1
-                redPointsInMode.text = "1/2"
-                defaultValues()
+            if viewModel.isTrue(){
+                if viewModel.redCounter < 2{
+                    present(Alert().alertMode(), animated: true, completion: nil)
+                    viewModel.redCounter += 1
+                    redPointsInMode.text = "1/2"
+                    defaultValues()
+                }else{
+                    present(Alert().createAlert(team: "Vermelho", draw: nil), animated: true, completion: nil)
+                    defaultValues()
+                    viewModel.redCounter = 1
+                    viewModel.blueCounter = 1
+                    redPointsInMode.text = "0/2"
+                    bluePointsInMode.text = "0/2"
+                }
             }else{
                 present(Alert().createAlert(team: "Vermelho", draw: nil), animated: true, completion: nil)
                 defaultValues()
-                viewModel.redCounter = 1
-                viewModel.blueCounter = 1
-                redPointsInMode.text = "0/2"
-                bluePointsInMode.text = "0/2"
             }
         }
     }
@@ -170,18 +181,23 @@ class ConventionalGameViewController: UIViewController {
         if viewModel.addInCount(string: string){
             bluePointLabel.text = viewModel.value
         }else{
-            if viewModel.blueCounter < 2{
-                present(Alert().alertMode(), animated: true, completion: nil)
-                viewModel.blueCounter += 1
-                bluePointsInMode.text = "1/2"
-                defaultValues()
+            if viewModel.isTrue(){
+                if viewModel.blueCounter < 2{
+                    present(Alert().alertMode(), animated: true, completion: nil)
+                    viewModel.blueCounter += 1
+                    bluePointsInMode.text = "1/2"
+                    defaultValues()
+                }else{
+                    present(Alert().createAlert(team: "Azul", draw: nil), animated: true, completion: nil)
+                    defaultValues()
+                    viewModel.redCounter = 1
+                    viewModel.blueCounter = 1
+                    redPointsInMode.text = "0/2"
+                    bluePointsInMode.text = "0/2"
+                }
             }else{
                 present(Alert().createAlert(team: "Azul", draw: nil), animated: true, completion: nil)
                 defaultValues()
-                viewModel.redCounter = 1
-                viewModel.blueCounter = 1
-                redPointsInMode.text = "0/2"
-                bluePointsInMode.text = "0/2"
             }
         }
     }
